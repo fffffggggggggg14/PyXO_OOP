@@ -122,6 +122,7 @@ class clsGame:
 
     def QuitGame(self):
         print("Quit Game, Thank You.")
+        exit()
     def InfoPlayer(self):
         ListNotSingle = []
         for i, List in enumerate(self.ListPlayer, start = 1):
@@ -143,7 +144,7 @@ class clsGame:
                     self.RestartGame()
                 else:
                     self.QuitGame()
-                    break
+                    # break
     def RestartGame(self):
         self.Board.voidBoard()
         self.IndexListPlayer = 0
